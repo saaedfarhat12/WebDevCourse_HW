@@ -1,57 +1,67 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<link rel ="stylesheet" href="style.css">
-
-      
-
-   
+    <meta charset="UTF-8" />
+    <title>My Favorite Songs</title>
+    <!-- קישור לקובץ ה־CSS -->
+    <link rel="stylesheet" href="playlist.css" />
 </head>
+
 <body>
-    <h1 id="main-title">Welcome to the Demo</h1>
-    <p>This is a paragraph.</p>
-     <p>Another paragraph.</p>
+    <h1 class="page-title">My Favorite Songs</h1>
 
-    <p class="highlight">This paragraph is highlighted.</p>
-    <p>This one is not.</p>
-    <a style="color: crimson;front-size: 20px; border: 1px dashed lightgreen;" href="http://www.n12.co.il">n12</a>
-    <br>
-    <br>
-    <br>
-    <button class="myButton"> click me </button>
-    <br>
-    <br>
-    <table>
-        <tr>
-          <th>Image</th>
-          <th>Song Name</th>
-          <th>Singer Name</th>
-          <th>Year</th>
-          <th>Video</th>
-        </tr>
-        <tr>
-          <td><img src="https://upload.wikimedia.org/wikipedia/en/4/45/Ed_Sheeran_-_Divide.png" alt="Shape of You"></td>
-          <td>Shape of You</td>
-          <td>Ed Sheeran</td>
-          <td>2017</td>
-          <td><a href="https://www.youtube.com/watch?v=JGwWNGJdvx8" target="_blank">Watch</a></td>
-        </tr>
-        <tr>
-          <td><img src="https://upload.wikimedia.org/wikipedia/en/e/e1/The_Weeknd_-_After_Hours.png" alt="Blinding Lights"></td>
-          <td>Blinding Lights</td>
-          <td>The Weeknd</td>
-          <td>2019</td>
-          <td><a href="https://www.youtube.com/watch?v=4NRXx6U8ABQ" target="_blank">Watch</a></td>
-        </tr>
-        <tr>
-          <td><img src="https://upload.wikimedia.org/wikipedia/en/0/0f/Dua_Lipa_-_Future_Nostalgia_%28Official_Album_Cover%29.png" alt="Levitating"></td>
-          <td>Levitating</td>
-          <td>Dua Lipa</td>
-          <td>2020</td>
-          <td><a href="https://www.youtube.com/watch?v=TUVcZfQe-Kw" target="_blank">Watch</a></td>
-        </tr>
-      </table>
+    <div class="table-container">
+        <table class="music-table">
+            <thead>
+                <tr>
+                    <th>Song Name</th>
+                    <th>Tags</th>
+                    <th>Video</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Row 1 -->
+                <tr>
+                    <td>Cartoon - On & On [NCS Release]</td>
+                    <td>Electronic, Dance, Energetic, Upbeat</td>
+                    <td>
+                        <iframe class="video-frame" src="https://www.youtube.com/embed/K4DyBUG242c"
+                            title="Cartoon - On & On [NCS Release]"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen>
+                        </iframe>
+                    </td>
+                </tr>
 
+                <!-- Row 2 -->
+                <tr>
+                    <td>NEFFEX - Cold</td>
+                    <td>Rock, Rap, Motivation, Workout</td>
+                    <td>
+                        <iframe class="video-frame" src="https://www.youtube.com/embed/WzQBAc8i73E"
+                            title="NEFFEX - Cold"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen>
+                        </iframe>
+                    </td>
+                </tr>
 
+                <!-- Row 3 -->
+                <tr>
+                    <td>Syn Cole - Feel Good [NCS Release]</td>
+                    <td>House, Party, Happy, Summer</td>
+                    <td>
+                        <iframe class="video-frame" src="https://www.youtube.com/embed/q1ULJ92aldE"
+                            title="Syn Cole - Feel Good [NCS Release]"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen>
+                        </iframe>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </body>
+
 </html>
