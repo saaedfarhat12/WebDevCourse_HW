@@ -66,4 +66,10 @@ p {
         background-color: skyblue;
         color: lightblue;
         font-size: 30px;
+
+      }
+      .youtubeLink:hover
+      {
+        color: red;
+
       }
