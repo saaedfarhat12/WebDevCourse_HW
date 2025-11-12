@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <link rel="stylesheet" href="contact.css">
+  <style>
+   
+  </style>
+</head>
+<body>
+  <h2>Contact</h2>
+  
+  <table border="1" dir="ltr" class="ss"> 
+    <th colspan="3"> Send a Message</th>
+    <tr>
+      <td class="label-cell">Name:</td>
+      <td><input type="text" name="name"></td>
+    </tr>
+    <tr>
+      <td class="label-cell">Email:</td>
+      <td><input type="email" name="email"></td>
+    </tr>
+    <tr>
+      <td class="label-cell">Phone:</td>
+      <td><input type="tel" name="phone"></td>
+    </tr>
+    <tr>
+      <td class="label-cell">Subject:</td>
+      <td><input type="text" name="subject"></td>
+    </tr>
+    <tr>
+      <td class="label-cell">Message:</td>
+      <td><textarea name="message" rows="4"></textarea></td>
+    </tr>
+    <tr>
+      <td colspan="2" class="center-btn">
+        <button type="button" class="showAlert">Send Message</button>
+      </td>
+    </tr>
+  </table>
+
+  <!-- Script to show alert when button is clicked -->
+  <script>
+    // Select the button by its class
+    const button = document.querySelector('.showAlert');
+  
+    // Add click event listener to show alert
+    button.addEventListener('click', function() {
+      // Get the values from the form inputs
+      const name = document.querySelector('input[name="name"]').value;
+      const email = document.querySelector('input[name="email"]').value;
+      const phone = document.querySelector('input[name="phone"]').value;
+      const subject = document.querySelector('input[name="subject"]').value;
+      const message = document.querySelector('textarea[name="message"]').value;
+  
+      // Create the alert message
+      const alertMessage = `Debug Message:\n\nName: ${name}\nEmail: ${email}\nPhone: ${phone}\nSubject: ${subject}\nMessage: ${message}`;
+  
+      // Show the alert
+      alert(alertMessage);
+    });
+  </script>
+</body>
+</html>
