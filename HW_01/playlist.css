@@ -55,6 +55,15 @@ p {
         color: #0078D7;
         text-decoration: none;
       }
-      .page-title{
+      .titles{
+        color: white;
+        background-color: blue;
         text-align: center;
+
+      }
+      .rows
+      {
+        background-color: skyblue;
+        color: lightblue;
+        font-size: 30px;
       }
